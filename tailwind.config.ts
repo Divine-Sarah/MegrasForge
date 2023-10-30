@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: 'poppins',
+         montserrat: 'montserrat'
+      },
+      colors: {
+        'gradient': 'gradient-to-r from-[#1E73BE] via-[#00BFEF]',
+        border: '#1E73BE'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

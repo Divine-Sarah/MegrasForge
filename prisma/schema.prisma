@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id              String          @id @map("_id") @default(uuid())
+  active          Boolean         @default(true)
+  fullName String   @map(name: "full_name_column")
+  email           String          @unique
+  username        String
+  password        String
+  confirmPassword String
+  created_at      DateTime        @default(now())
+  deleted_at      DateTime?
+  updated_at      DateTime        @updatedAt
+
+  @@map(name: "users")
+}
+
+model Topic {
+  id  String @id @map("_id") @default(uuid())
+  category String
+  topic    String
+  description String
+}
+
+model Comments {
+id              String          @id @map("_id") @default(uuid())
+  user_id String
+}
+
+
+
