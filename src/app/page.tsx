@@ -1,16 +1,32 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "../components/ui/layout/navbar";
 import Slide1 from "@/components/ui/layout/homePageSlides/slide1";
 import Slide2 from "@/components/ui/layout/homePageSlides/slide2";
-import Slide3 from "@/components/ui/layout/homePageSlides/slide3"
+import Slide3 from "@/components/ui/layout/homePageSlides/slide3";
 import Slide4 from "@/components/ui/layout/homePageSlides/slide4";
 import Slide5 from "@/components/ui/layout/homePageSlides/slide5";
 import Footer from "@/components/ui/layout/footer";
+import SERVICE from "@/service";
 
 export default function Home() {
+  const getAllUsers = () => {
+    SERVICE.user
+      .getAllUser()
+      .then((user) => console.log(user))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <main>
       {/* Hero Section */}
+      <div
+        onClick={() => getAllUsers()}
+        className="p-3 text-lg text-white bg-red-700 w-30 h-30 cursor-pointer"
+      >
+        GET ALL USERS
+      </div>
       <section className="relative">
         <div className="w-full">
           <Image
@@ -50,16 +66,16 @@ export default function Home() {
             alt="right-arrow"
             width={2000}
             height={500}
-          /> 
+          />
         </div>
       </section>
       <section>
-        <Slide1/>
-        <Slide2/>
-        <Slide3/>
-        <Slide4/>
-        <Slide5/>
-        <Footer/>
+        <Slide1 />
+        <Slide2 />
+        <Slide3 />
+        <Slide4 />
+        <Slide5 />
+        <Footer />
       </section>
     </main>
   );

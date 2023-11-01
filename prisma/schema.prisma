@@ -14,11 +14,10 @@ datasource db {
 model User {
   id              String          @id @map("_id") @default(uuid())
   active          Boolean         @default(true)
-  fullName String   @map(name: "full_name_column")
+  fullName String   @map(name: "full_name")
   email           String          @unique
   username        String
   password        String
-  confirmPassword String
   created_at      DateTime        @default(now())
   deleted_at      DateTime?
   updated_at      DateTime        @updatedAt
