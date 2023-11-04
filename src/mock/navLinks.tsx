@@ -7,7 +7,7 @@ export const UserNavLinks = [
   {
     id: 1,
     title: "Recipes",
-    path: "/dashboard/video",
+    path: "/dashboard/recipe",
   },
 ];
 export const AdminNavLinks = [
@@ -21,5 +21,15 @@ export const AdminNavLinks = [
     id: 1,
     title: "Users",
     path: "/dashboard/users",
+  },
+  {
+    id: 2,
+    title: "Upload Video",
+    path: "/dashboard/uploadVideo",
+  },
+  {
+    id: 3,
+    title: "Upload Recipe",
+    path: "/dashboard/uploadRecipe",
   },
 ];

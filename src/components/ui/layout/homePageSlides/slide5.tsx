@@ -5,7 +5,7 @@ function slide5() {
   return (
     <main>
       <section className="mt-5 bg-black">
-        <div className="p-8 w-[100%] xl:w-[1490px] px-5  mx-auto py-[70px] mt-10 lg:py-[40px] pb-10">
+        <div className="p-8 w-[100%] xl:w-[1490px] px-5  mx-auto py-[70px]  lg:py-[40px] pb-10">
           <p className="text-[#fff]  font-[600] text-[64px] pb-7">
             User Testimonials
           </p>

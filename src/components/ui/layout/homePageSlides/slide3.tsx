@@ -4,7 +4,7 @@ import Image from "next/image";
 function slide3() {
   return (
     <main className="bg-[#fff]">
-      <section className="bg-appGray100 font-poppins">
+      <section className=" font-poppins">
         <div className="w-[90%] xl:w-[1290px] mx-auto py-[60px] md:py-[60px] lg:py-[49px]">
           <div className="content bg-[#BA80E6] md:py-[110px] py-[20px] lg:py-[100px] px-[20px] lg:px-[34px] rounded-3xl md:flex items-center">
             <div className="text md:w-1/2">

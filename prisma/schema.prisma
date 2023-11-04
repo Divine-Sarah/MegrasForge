@@ -32,6 +32,16 @@ model Topic {
   description String
 }
 
+
+model Recipe {
+  id String @id @map("_id") @default(uuid())
+  title String
+  ingredients String
+  instructions String
+  image   String
+}
+
+
 model Comments {
 id              String          @id @map("_id") @default(uuid())
   user_id String

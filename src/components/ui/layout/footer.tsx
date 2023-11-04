@@ -4,8 +4,8 @@ import Image from "next/image";
 function footer() {
   return (
     <main>
-      <section>
-        <div className="w-[90%] xl:w-[1280px] mx-auto py-[64px] md:py-[67px] lg:py-[49px]">
+      <section className='bg-white'>
+        <div className="w-[90%] xl:w-[1280px] mx-auto py-[64px] md:py-[67px] lg:py-[49px] bg-white ">
           <div className="content bg-[#C68CF2] md:py-[110px] py-[20px] lg:py-[40px] px-[10px] gap-20 lg:px-[34px] rounded-3xl md:flex items-center">
             <div>
               <Image src="/footer.svg" alt="slide1" width={300} height={300} />

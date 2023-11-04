@@ -21,12 +21,12 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <div
+      {/* <div
         onClick={() => getAllUsers()}
-        className="p-3 text-lg text-white bg-red-700 w-30 h-30 cursor-pointer"
+        className="p-3 text-lg text-white bg-red-700 cursor-pointer w-30 h-30"
       >
         GET ALL USERS
-      </div>
+      </div> */}
       <section className="relative">
         <div className="w-full">
           <Image

@@ -4,8 +4,8 @@ import Image from "next/image";
 function slide2() {
   return (
     <main className="bg-[#F5F5F5]">
-      <section className="p-8 w-[100%] xl:w-[1490px] px-5  mx-auto py-[70px] mt-10 lg:py-[40px]">
-        <div className="">
+      <section className="p-8 w-[100%] xl:w-[1490px] px-5  mx-auto py-[70px]  lg:py-[40px]">
+        <div className="text-black">
           <p className="flex items-center gap-3 mb-5 text-5xl font-bold font-montserrat">
             Meet Our
             <Image
@@ -34,7 +34,7 @@ function slide2() {
             width={600}
             height={600}
           />
-         
+
           <Image
             src="/slide2img6.svg"
             alt="right-arrow"
@@ -47,7 +47,6 @@ function slide2() {
             width={650}
             height={650}
           />
-         
         </div>
       </section>
     </main>

@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
         email: body.email,
         username: body.username,
         password: body.password,
-        confirmPassword: body.confirmPassword,
+        // confirmPassword: body.confirmPassword,
       },
     });
 

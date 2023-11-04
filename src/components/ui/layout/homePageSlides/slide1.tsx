@@ -4,16 +4,20 @@ import Image from "next/image";
 function slide1() {
   return (
     <main>
-      <div className="rounded-3xl bg-[rgb(57,25,82)] w-[100%] xl:w-[1490px] px-5  mx-auto py-[70px] mt-10 lg:py-[40px]">
-        <p className="text-center text-[#fff] font-montserrat font-semibold text-lg">
-          Welcome to the ultimate baking destination where you can learn the art
-          of baking like never before. Our video-assisted bakery products
-          learning platform is designed to inspire, educate, and empower baking
-          enthusiasts of all levels. Whether you're a novice in the kitchen or a
-          seasoned pro, we've got something delicious in store for you.
-        </p>
-      </div>
-      <div className="bg-[#FFF]">
+      <div className="bg-[#FFF] py-10">
+       
+           <div className="rounded-3xl bg-[rgb(57,25,82)] w-[100%] xl:w-[1490px] px-5   mx-auto py-[70px] lg:py-[40px]">
+          <p className="text-center text-[#fff] font-montserrat font-semibold text-lg">
+            Welcome to the ultimate baking destination where you can learn the
+            art of baking like never before. Our video-assisted bakery products
+            learning platform is designed to inspire, educate, and empower
+            baking enthusiasts of all levels. Whether you're a novice in the
+            kitchen or a seasoned pro, we've got something delicious in store
+            for you.
+          </p>
+        </div>
+        
+       
         <div className="w-[90%] xl:w-[1280px] mx-auto py-[64px] md:py-[67px] lg:py-[49px]">
           <div className="content  md:py-[110px] py-[20px] lg:py-[40px] px-[20px] lg:px-[40px] rounded-3xl md:flex items-center gap-10">
             <div className="flex items-center justify-center image md:w-1/2">
@@ -24,7 +28,7 @@ function slide1() {
                 height={670.15}
               />
             </div>
-            <div className="text md:w-1/2">
+            <div className="text-black text md:w-1/2">
               <div>
                 <p className="rounded-2xl bg-[#391952] justify-center flex font-montserrat text-xl font-semibold px-10 py-3 text-[#fff] text-center mb-5">
                   Watch & Learn
