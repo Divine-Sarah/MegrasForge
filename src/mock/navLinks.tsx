@@ -13,8 +13,8 @@ export const UserNavLinks = [
 export const AdminNavLinks = [
   {
     id: 0,
-    title: "Home",
-    path: "/dashboard",
+    title: "Dashboard",
+    path: "/dashboard/statistics",
   },
 
   {

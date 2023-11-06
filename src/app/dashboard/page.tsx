@@ -15,6 +15,7 @@ const DashboardPage = () => {
     // Handle click functionality here
     console.log("Card clicked!");
   };
+   const cloudinaryUrl = "YOUR_CLOUDINARY_VIDEO_URL";
   return (
     <DashboardLayout>
       <div className="p-10 max-w-7xl">
@@ -31,7 +32,7 @@ const DashboardPage = () => {
             </Button>
           </div>
           <section>
-            <VideoCard />
+            <VideoCard cloudinaryUrl={cloudinaryUrl} />
           </section>
         </section>
         <section className="mt-10">

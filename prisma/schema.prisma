@@ -33,6 +33,18 @@ model Topic {
 }
 
 
+
+model Video {
+  id          String     @id @map("_id") @default(uuid())
+  title       String
+  description String
+  videoPath   String    // Path to the video file on your local system
+  thumbnailUrl String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+
 model Recipe {
   id String @id @map("_id") @default(uuid())
   title String
